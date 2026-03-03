@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.lightbox {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+#close-btn {
+    border: none;
+    font-size: 2em;
+    background: transparent;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+#lightbox-image {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+
+}
+.gallery {
+    display: flex;
+    width: 810px;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto 0 auto;
+}
+.gallery > .gallery-item {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+h1 {
+    background-color: #d1ebf1;
+    padding: 3px 0;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
